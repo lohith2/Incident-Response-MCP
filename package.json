@@ -1,0 +1,32 @@
+{
+  "name": "incident-response-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for automated incident response workflows",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "seed": "tsx scripts/seed-incidents.ts",
+    "simulate": "npx tsx scripts/simulate-incident.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.758.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@pinecone-database/pinecone": "^3.0.3",
+    "@octokit/rest": "^21.1.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "ioredis": "^5.4.2",
+    "pg": "^8.13.3",
+    "winston": "^3.17.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
