@@ -1,0 +1,120 @@
+version: "3.9"
+
+services:
+  # ── Pinecone seed (runs once on startup) ──────────────────────────────────
+  # Populates the vector knowledge base before the MCP server accepts traffic.
+  # restart: "no" ensures it only runs once even if the stack is restarted.
+  seed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    env_file: .env
+    environment:
+      REDIS_URL: "redis://redis:6379"
+      DATABASE_URL: "postgresql://user:password@postgres:5432/incident_response"
+    command: [ "npx", "tsx", "scripts/seed-incidents.ts" ]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: "no"
+
+  # ── MCP server (TypeScript) ────────────────────────────────────────────────
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    environment:
+      HTTP_PORT: "3000"
+      REDIS_URL: "redis://redis:6379"
+      DATABASE_URL: "postgresql://user:password@postgres:5432/incident_response"
+      PINECONE_API_KEY: "${PINECONE_API_KEY}"
+      PINECONE_INDEX_NAME: "${PINECONE_INDEX_NAME:-incident-postmortems}"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_SESSION_TOKEN: "${AWS_SESSION_TOKEN:-}"
+      AWS_BEDROCK_MODEL_ID: "${AWS_BEDROCK_MODEL_ID}"
+      SLACK_WEBHOOK_SEV1: "${SLACK_WEBHOOK_SEV1}"
+      SLACK_WEBHOOK_SEV2: "${SLACK_WEBHOOK_SEV2}"
+      SLACK_WEBHOOK_SEV3: "${SLACK_WEBHOOK_SEV3}"
+      SLACK_WEBHOOK_ALL: "${SLACK_WEBHOOK_ALL}"
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── Python workflow sidecar ───────────────────────────────────────────────
+  workflow:
+    build:
+      context: .
+      dockerfile: workflow/Dockerfile
+    env_file: .env
+    environment:
+      MCP_SERVER_URL: "http://mcp-server:3000"
+      PINECONE_API_KEY: "${PINECONE_API_KEY}"
+      PINECONE_INDEX_NAME: "${PINECONE_INDEX_NAME:-incident-postmortems}"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_SESSION_TOKEN: "${AWS_SESSION_TOKEN:-}"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mcp-server
+    restart: unless-stopped
+
+  # ── Redis ─────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    command: redis-server --save 60 1 --loglevel warning
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  # ── Postgres ──────────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: incident_response
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U user -d incident_response" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  # ── Dashboard (nginx serving React build) ─────────────────────────────────
+  dashboard:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dashboard/dist:/usr/share/nginx/html:ro
+      - ./dashboard/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - workflow
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  redisdata:
