@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+workflow/__pycache__/
+.venv/
+*.egg-info/
+
+# Dev / editor
+.env
+.env.*
+!.env.example
+.git/
+.gitignore
+.DS_Store
+*.swp
+*.swo
+
+# Dashboard build artefacts (built separately)
+dashboard/node_modules/
+dashboard/dist/
+
+# Docs & scripts (not needed in image)
+README.md
+*.md
+Makefile
