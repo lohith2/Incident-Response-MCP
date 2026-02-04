@@ -1,0 +1,19 @@
+- 2026-03-22 11:36:00: feat: implement tool: impact_assessment with downstream service mapping
+- 2026-03-22 21:09:00: feat: implement self-improving RAG with feedback loop on resolution quality
+- 2026-03-23 19:32:00: refactor: extract AWS Bedrock client into reusable service module
+- 2026-03-25 22:23:00: fix: resolve React dashboard WebSocket reconnection issue
+- 2026-03-25 17:20:00: feat: implement incident severity classification tool
+- 2026-03-25 11:02:00: chore: add environment variable validation on startup
+- 2026-03-27 16:27:00: feat: add streaming postmortem generation via SSE
+- 2026-03-27 16:59:00: fix: resolve MCP tool schema validation error on complex inputs
+- 2026-03-27 22:16:00: fix: handle AWS Bedrock throttling with retry logic
+- 2026-03-28 19:32:00: fix: resolve Pinecone namespace collision between incidents and runbooks
+- 2026-03-28 14:42:00: refactor: improve LangGraph state persistence for long investigations
+- 2026-03-29 15:44:00: feat: implement tool: investigate_incident with root cause analysis
+- 2026-03-30 18:59:00: test: validate similar incident retrieval with semantic search
+- 2026-03-31 13:25:00: fix: improve error messages for failed tool executions
+- 2026-03-31 14:19:00: test: validate SEV1 database connection pool exhaustion investigation
+- 2026-03-31 10:16:00: feat: implement tool: knowledge_base_update for continuous improvement
+- 2026-04-01 21:15:00: refactor: consolidate MCP tool definitions into typed schemas
+- 2026-04-01 18:35:00: test: validate SEV2 memory leak detection across microservices
+- 2026-02-04 15:10:00: feat: add streaming postmortem generation via SSE
