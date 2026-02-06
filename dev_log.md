@@ -19,3 +19,4 @@
 - 2026-02-04 15:10:00: feat: add streaming postmortem generation via SSE
 - 2026-02-04 10:13:00: fix: resolve Redis TTL expiry during long investigations
 - 2026-02-05 19:48:00: feat: implement incident severity classification tool
+- 2026-02-05 21:38:00: test: validate postmortem generation with action item extraction
