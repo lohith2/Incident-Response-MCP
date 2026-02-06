@@ -18,3 +18,4 @@
 - 2026-04-01 18:35:00: test: validate SEV2 memory leak detection across microservices
 - 2026-02-04 15:10:00: feat: add streaming postmortem generation via SSE
 - 2026-02-04 10:13:00: fix: resolve Redis TTL expiry during long investigations
+- 2026-02-05 19:48:00: feat: implement incident severity classification tool
