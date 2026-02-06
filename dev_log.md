@@ -20,3 +20,4 @@
 - 2026-02-04 10:13:00: fix: resolve Redis TTL expiry during long investigations
 - 2026-02-05 19:48:00: feat: implement incident severity classification tool
 - 2026-02-05 21:38:00: test: validate postmortem generation with action item extraction
+- 2026-02-05 19:44:00: fix: resolve Pinecone namespace collision between incidents and runbooks
