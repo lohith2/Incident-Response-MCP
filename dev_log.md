@@ -21,3 +21,4 @@
 - 2026-02-05 19:48:00: feat: implement incident severity classification tool
 - 2026-02-05 21:38:00: test: validate postmortem generation with action item extraction
 - 2026-02-05 19:44:00: fix: resolve Pinecone namespace collision between incidents and runbooks
+- 2026-02-07 16:40:00: fix: improve error messages for failed tool executions
