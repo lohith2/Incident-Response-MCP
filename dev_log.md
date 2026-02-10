@@ -26,3 +26,4 @@
 - 2026-02-08 21:12:00: test: validate SEV2 memory leak detection across microservices
 - 2026-02-10 18:56:00: fix: correct TypeScript type errors in MCP tool handlers
 - 2026-02-10 15:20:00: feat: implement tool: knowledge_base_update for continuous improvement
+- 2026-02-10 12:04:00: chore: add environment variable validation on startup
