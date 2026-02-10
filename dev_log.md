@@ -28,3 +28,4 @@
 - 2026-02-10 15:20:00: feat: implement tool: knowledge_base_update for continuous improvement
 - 2026-02-10 12:04:00: chore: add environment variable validation on startup
 - 2026-02-10 14:45:00: feat: add Sonnet model for deep root cause analysis
+- 2026-02-10 11:17:00: feat: implement tool: escalation_path with on-call routing logic
