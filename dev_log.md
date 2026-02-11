@@ -30,3 +30,4 @@
 - 2026-02-10 14:45:00: feat: add Sonnet model for deep root cause analysis
 - 2026-02-10 11:17:00: feat: implement tool: escalation_path with on-call routing logic
 - 2026-02-11 10:52:00: fix: resolve React dashboard WebSocket reconnection issue
+- 2026-02-11 15:25:00: refactor: extract AWS Bedrock client into reusable service module
