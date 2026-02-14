@@ -33,3 +33,4 @@
 - 2026-02-11 15:25:00: refactor: extract AWS Bedrock client into reusable service module
 - 2026-02-11 12:57:00: fix: handle missing runbook entries with graceful fallback
 - 2026-02-11 18:24:00: feat: implement tool: investigate_incident with root cause analysis
+- 2026-02-14 12:10:00: refactor: consolidate MCP tool definitions into typed schemas
