@@ -34,3 +34,4 @@
 - 2026-02-11 12:57:00: fix: handle missing runbook entries with graceful fallback
 - 2026-02-11 18:24:00: feat: implement tool: investigate_incident with root cause analysis
 - 2026-02-14 12:10:00: refactor: consolidate MCP tool definitions into typed schemas
+- 2026-02-14 20:20:00: refactor: improve LangGraph state persistence for long investigations
