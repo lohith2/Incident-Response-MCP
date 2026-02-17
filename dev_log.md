@@ -38,3 +38,4 @@
 - 2026-02-14 18:39:00: chore: add comprehensive TypeScript strict mode compliance
 - 2026-02-14 10:43:00: feat: implement tool: impact_assessment with downstream service mapping
 - 2026-02-15 15:48:00: feat: implement tool: timeline_reconstruction from log correlation
+- 2026-02-17 12:41:00: docs: add MCP tool catalog with input/output schemas
