@@ -41,3 +41,4 @@
 - 2026-02-17 12:41:00: docs: add MCP tool catalog with input/output schemas
 - 2026-02-17 17:02:00: test: validate similar incident retrieval with semantic search
 - 2026-02-17 18:56:00: feat: add incident priority queue for concurrent investigations
+- 2026-02-20 14:27:00: fix: resolve async tool execution timeout in complex investigations
