@@ -45,3 +45,4 @@
 - 2026-02-20 15:19:00: feat: add multi-model routing based on incident complexity score
 - 2026-02-20 18:39:00: refactor: improve alert correlation logic for noisy environments
 - 2026-02-21 17:26:00: feat: add Haiku model for fast incident pattern extraction
+- 2026-02-21 19:18:00: docs: update deployment guide for Railway hosting
