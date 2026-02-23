@@ -46,3 +46,4 @@
 - 2026-02-20 18:39:00: refactor: improve alert correlation logic for noisy environments
 - 2026-02-21 17:26:00: feat: add Haiku model for fast incident pattern extraction
 - 2026-02-21 19:18:00: docs: update deployment guide for Railway hosting
+- 2026-02-22 17:06:00: docs: add architecture diagram showing MCP + LangGraph + Bedrock flow
