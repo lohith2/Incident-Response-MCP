@@ -48,3 +48,4 @@
 - 2026-02-21 19:18:00: docs: update deployment guide for Railway hosting
 - 2026-02-22 17:06:00: docs: add architecture diagram showing MCP + LangGraph + Bedrock flow
 - 2026-02-24 15:06:00: fix: resolve MCP tool schema validation error on complex inputs
+- 2026-02-24 14:51:00: fix: handle AWS Bedrock throttling with retry logic
