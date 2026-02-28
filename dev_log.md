@@ -50,3 +50,4 @@
 - 2026-02-24 15:06:00: fix: resolve MCP tool schema validation error on complex inputs
 - 2026-02-24 14:51:00: fix: handle AWS Bedrock throttling with retry logic
 - 2026-02-25 10:22:00: feat: implement self-improving RAG with feedback loop on resolution quality
+- 2026-02-27 18:55:00: test: validate SEV1 database connection pool exhaustion investigation
