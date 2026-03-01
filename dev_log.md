@@ -54,3 +54,4 @@
 - 2026-02-28 17:48:00: docs: add MCP tool catalog with input/output schemas
 - 2026-02-28 17:33:00: test: validate SEV1 database connection pool exhaustion investigation
 - 2026-02-28 19:01:00: feat: implement incident severity classification tool
+- 2026-02-28 17:15:00: fix: resolve async tool execution timeout in complex investigations
