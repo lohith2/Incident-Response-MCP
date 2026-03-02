@@ -57,3 +57,4 @@
 - 2026-02-28 17:15:00: fix: resolve async tool execution timeout in complex investigations
 - 2026-03-01 15:14:00: feat: implement self-improving RAG with feedback loop on resolution quality
 - 2026-03-01 17:47:00: feat: add incident priority queue for concurrent investigations
+- 2026-03-01 20:15:00: feat: add Sonnet model for deep root cause analysis
