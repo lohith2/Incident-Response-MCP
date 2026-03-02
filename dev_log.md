@@ -59,3 +59,4 @@
 - 2026-03-01 17:47:00: feat: add incident priority queue for concurrent investigations
 - 2026-03-01 20:15:00: feat: add Sonnet model for deep root cause analysis
 - 2026-03-01 13:41:00: fix: handle AWS Bedrock throttling with retry logic
+- 2026-03-01 16:56:00: test: validate SEV2 memory leak detection across microservices
