@@ -62,3 +62,4 @@
 - 2026-03-01 16:56:00: test: validate SEV2 memory leak detection across microservices
 - 2026-03-02 18:24:00: feat: implement tool: knowledge_base_update for continuous improvement
 - 2026-03-02 17:26:00: fix: resolve Redis TTL expiry during long investigations
+- 2026-03-05 18:20:00: fix: improve error messages for failed tool executions
