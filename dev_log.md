@@ -68,3 +68,4 @@
 - 2026-03-07 19:43:00: test: validate postmortem generation with action item extraction
 - 2026-03-07 19:13:00: feat: implement tool: timeline_reconstruction from log correlation
 - 2026-03-07 14:48:00: fix: resolve MCP tool schema validation error on complex inputs
+- 2026-03-07 19:48:00: chore: add environment variable validation on startup
