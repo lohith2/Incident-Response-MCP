@@ -70,3 +70,4 @@
 - 2026-03-07 14:48:00: fix: resolve MCP tool schema validation error on complex inputs
 - 2026-03-07 19:48:00: chore: add environment variable validation on startup
 - 2026-03-10 11:40:00: docs: add architecture diagram showing MCP + LangGraph + Bedrock flow
+- 2026-03-10 19:53:00: feat: add streaming postmortem generation via SSE
