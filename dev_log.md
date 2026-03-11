@@ -72,3 +72,4 @@
 - 2026-03-10 11:40:00: docs: add architecture diagram showing MCP + LangGraph + Bedrock flow
 - 2026-03-10 19:53:00: feat: add streaming postmortem generation via SSE
 - 2026-03-11 15:02:00: docs: update deployment guide for Railway hosting
+- 2026-03-11 14:50:00: feat: implement tool: suggest_remediation based on runbook retrieval
