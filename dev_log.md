@@ -74,3 +74,4 @@
 - 2026-03-11 15:02:00: docs: update deployment guide for Railway hosting
 - 2026-03-11 14:50:00: feat: implement tool: suggest_remediation based on runbook retrieval
 - 2026-03-11 17:59:00: feat: add multi-model routing based on incident complexity score
+- 2026-03-12 20:38:00: feat: add Haiku model for fast incident pattern extraction
