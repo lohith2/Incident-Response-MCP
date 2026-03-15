@@ -78,3 +78,4 @@
 - 2026-03-12 17:51:00: feat: implement tool: escalation_path with on-call routing logic
 - 2026-03-12 10:27:00: chore: add comprehensive TypeScript strict mode compliance
 - 2026-03-15 20:58:00: fix: correct TypeScript type errors in MCP tool handlers
+- 2026-03-15 15:05:00: refactor: extract AWS Bedrock client into reusable service module
