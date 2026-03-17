@@ -80,3 +80,4 @@
 - 2026-03-15 20:58:00: fix: correct TypeScript type errors in MCP tool handlers
 - 2026-03-15 15:05:00: refactor: extract AWS Bedrock client into reusable service module
 - 2026-03-15 13:35:00: refactor: consolidate MCP tool definitions into typed schemas
+- 2026-03-16 17:28:00: test: validate similar incident retrieval with semantic search
