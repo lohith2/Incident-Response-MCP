@@ -81,3 +81,4 @@
 - 2026-03-15 15:05:00: refactor: extract AWS Bedrock client into reusable service module
 - 2026-03-15 13:35:00: refactor: consolidate MCP tool definitions into typed schemas
 - 2026-03-16 17:28:00: test: validate similar incident retrieval with semantic search
+- 2026-03-16 17:47:00: refactor: improve LangGraph state persistence for long investigations
