@@ -84,3 +84,4 @@
 - 2026-03-16 17:47:00: refactor: improve LangGraph state persistence for long investigations
 - 2026-03-16 17:45:00: feat: implement tool: investigate_incident with root cause analysis
 - 2026-03-16 15:11:00: feat: implement tool: impact_assessment with downstream service mapping
+- 2026-03-18 20:51:00: fix: resolve Pinecone namespace collision between incidents and runbooks
