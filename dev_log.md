@@ -87,3 +87,4 @@
 - 2026-03-18 20:51:00: fix: resolve Pinecone namespace collision between incidents and runbooks
 - 2026-03-18 15:22:00: fix: resolve React dashboard WebSocket reconnection issue
 - 2026-03-19 19:37:00: refactor: improve alert correlation logic for noisy environments
+- 2026-03-20 17:32:00: fix: resolve React dashboard WebSocket reconnection issue
