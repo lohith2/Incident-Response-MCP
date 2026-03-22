@@ -89,3 +89,4 @@
 - 2026-03-19 19:37:00: refactor: improve alert correlation logic for noisy environments
 - 2026-03-20 17:32:00: fix: resolve React dashboard WebSocket reconnection issue
 - 2026-03-20 11:45:00: test: validate postmortem generation with action item extraction
+- 2026-03-21 19:50:00: fix: resolve Redis TTL expiry during long investigations
