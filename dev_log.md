@@ -91,3 +91,4 @@
 - 2026-03-20 11:45:00: test: validate postmortem generation with action item extraction
 - 2026-03-21 19:50:00: fix: resolve Redis TTL expiry during long investigations
 - 2026-03-24 18:18:00: fix: resolve MCP tool schema validation error on complex inputs
+- 2026-03-24 13:23:00: feat: add streaming postmortem generation via SSE
