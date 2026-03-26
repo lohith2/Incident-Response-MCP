@@ -92,3 +92,4 @@
 - 2026-03-21 19:50:00: fix: resolve Redis TTL expiry during long investigations
 - 2026-03-24 18:18:00: fix: resolve MCP tool schema validation error on complex inputs
 - 2026-03-24 13:23:00: feat: add streaming postmortem generation via SSE
+- 2026-03-25 20:14:00: refactor: improve LangGraph state persistence for long investigations
