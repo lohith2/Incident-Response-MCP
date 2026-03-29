@@ -95,3 +95,4 @@
 - 2026-03-25 20:14:00: refactor: improve LangGraph state persistence for long investigations
 - 2026-03-28 19:17:00: feat: add multi-model routing based on incident complexity score
 - 2026-03-28 19:50:00: fix: improve error messages for failed tool executions
+- 2026-03-28 20:24:00: docs: add MCP tool catalog with input/output schemas
