@@ -94,3 +94,4 @@
 - 2026-03-24 13:23:00: feat: add streaming postmortem generation via SSE
 - 2026-03-25 20:14:00: refactor: improve LangGraph state persistence for long investigations
 - 2026-03-28 19:17:00: feat: add multi-model routing based on incident complexity score
+- 2026-03-28 19:50:00: fix: improve error messages for failed tool executions
