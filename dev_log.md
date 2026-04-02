@@ -99,3 +99,4 @@
 - 2026-04-01 14:38:00: docs: add architecture diagram showing MCP + LangGraph + Bedrock flow
 - 2026-04-01 13:56:00: fix: resolve Pinecone namespace collision between incidents and runbooks
 - 2026-04-02 21:23:00: refactor: consolidate MCP tool definitions into typed schemas
+- 2026-04-02 10:56:00: docs: update deployment guide for Railway hosting
