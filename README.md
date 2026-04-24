@@ -154,12 +154,6 @@ Every resolved incident automatically:
 3. Deduplicates patterns against existing knowledge base
 4. Makes future investigations faster and more accurate
 
-```
-Day 1:   10 seed incidents, 20 patterns
-Week 1:  40+ incidents, 64+ patterns
-Month 1: 200+ incidents, 300+ patterns → highly accurate RAG
-```
-
 ---
 
 ## Slack Severity Routing
